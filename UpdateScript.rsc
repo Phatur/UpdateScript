@@ -1,3 +1,4 @@
+/system script
 add dont-require-permissions=no name=StartRouterUpdate owner=root policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/\
     system script add name=UpgradeRouter source=\"/tool fetch url=\\\"https://\
