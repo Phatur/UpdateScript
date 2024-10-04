@@ -24,7 +24,7 @@ add dont-require-permissions=no name=StartRouterUpdate owner=root policy=\
     \n/file remove \"UpdateScript.rsc\"\r\
     \n/system script remove StartRouterUpdate\r\
     \n\r\
-    \n/system package update set channel=testing; \\\r\
+    \n/system package update set channel=upgrade; \\\r\
     \n/system package update check-for-updates once; \\\r\
     \n:delay 5s; \\\r\
     \n:if ([/system package update get status] = \"New version is available\")\
