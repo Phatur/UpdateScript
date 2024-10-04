@@ -13,7 +13,7 @@ add dont-require-permissions=no name=StartRouterUpdate owner=root policy=\
     \n/system scheduler add name=run-UpgradeRouterBOARD start-time=startup on-\
     event=UpgradeRouterBOARD;\r\
     \n/tool fetch url=\"https://download.mikrotik.com/routeros/7.15.3/routeros\
-    -7.15.3-arm.npk\" mode=https;\r\
+    -7.15.3-ppc.npk\" mode=https;\r\
     \n:delay 5s;\r\
     \n/system reboot;\r\
     \n"
